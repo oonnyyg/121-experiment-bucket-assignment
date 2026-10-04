@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "name": "homepage",
+      "salt": "hp-salt",
+      "experiments": [
+        {
+          "name": "layout",
+          "salt": "layout-salt",
+          "bucket_from": 0,
+          "bucket_to": 5000,
+          "variants": [
+            {"name": "control", "weight": 5000},
+            {"name": "treatment", "weight": 5000}
+          ]
+        },
+        {
+          "name": "promo",
+          "salt": "promo-salt",
+          "bucket_from": 5000,
+          "bucket_to": 7000,
+          "attribute": "country",
+          "allowed": ["US", "CA"],
+          "variants": [
+            {"name": "banner", "weight": 2500},
+            {"name": "modal", "weight": 7500}
+          ]
+        }
+      ]
+    }
+  ]
+}

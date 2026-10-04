@@ -1,0 +1,7 @@
+group,experiment,variant,reason,count
+homepage,,,attribute_not_allowed,146
+homepage,,,no_experiment,591
+homepage,layout,control,,489
+homepage,layout,treatment,,510
+homepage,promo,banner,,60
+homepage,promo,modal,,204
